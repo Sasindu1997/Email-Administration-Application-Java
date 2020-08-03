@@ -7,11 +7,9 @@ public class Email {
  private String lastName;
  private String password;
  private String department;
- private String email;
  private int mailboxCapacity;
  private int randomPwl = 8;
  private String alternateEmail;
- private String emailSuffix = ".com";
  
  //Constructor
  public Email(String firstName, String lastName) {
@@ -26,10 +24,6 @@ public class Email {
 	 //random PW
 	 this.password = randomPassword(randomPwl);
 	 System.out.println("Your password is : " + this.password);
-	 
-	 //combine details to generate emails
-	 email = firstName.toLowerCase() + "." + lastName.toLowerCase() + "@" + department + emailSuffix;
-	 System.out.println(email);
  }
 
  
